@@ -9,10 +9,10 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-INCLUDEPATH += ../../Libraries/openssl/include
-
-LIBS += ../Libraries/openssl/libcrypto.a
-LIBS += ../Libraries/openssl/libssl.a
+INCLUDEPATH += /opt/openssl/include
+LIBS += /opt/openssl/lib
+LIBS += /opt/openssl/lib/libcrypto.a
+LIBS += /opt/openssl/lib/libssl.a
 
 SOURCES += main.cpp \
     cipher.cpp
